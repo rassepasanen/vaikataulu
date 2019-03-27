@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" maxHeight="954.0" prefHeight="954.0" prefWidth="1809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
+   <children>
+      <AnchorPane id="anchor" fx:id="anchor" maxHeight="1008.0" minHeight="-Infinity" prefHeight="936.0" prefWidth="1705.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <SplitPane dividerPositions="0.5" layoutX="-2.0" layoutY="-3.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="821.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+               <items>
+                  <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="Kuvapankki" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="1257.1419525146484" SplitPane.resizableWithParent="false">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font size="61.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="tallennaPoistu" alignment="CENTER" centerShape="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" text="Tallenna ja poistu" textAlignment="CENTER" SplitPane.resizableWithParent="false">
+                     <font>
+                        <Font name="Century Gothic" size="35.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets right="5.0" />
+                     </opaqueInsets>
+                  </Button>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="viikkonakyma" layoutX="-1.0" layoutY="117.0" prefHeight="931.0" prefWidth="1754.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="117.0">
+               <effect>
+                  <Glow />
+               </effect>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <ScrollBar fx:id="scrollbar" orientation="VERTICAL" prefHeight="954.0" prefWidth="9.0" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.vgrow="ALWAYS">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </ScrollBar>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="38.0" minWidth="10.0" prefWidth="38.0" />
+      <ColumnConstraints maxWidth="12.333251953125" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="954.0" minHeight="938.0" prefHeight="954.0" />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" prefHeight="1381.0" prefWidth="1814.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
+   <children>
+      <AnchorPane id="anchor" fx:id="anchor" maxHeight="1008.0" minHeight="-Infinity" prefHeight="969.0" prefWidth="1775.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <SplitPane dividerPositions="0.5" layoutX="236.0" layoutY="3.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="114.0" prefWidth="1532.0" scaleShape="false" AnchorPane.bottomAnchor="852.0" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+               <items>
+                  <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="Viikkojärjestys" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="1102.141993522644" SplitPane.resizableWithParent="false">
+                     <font>
+                        <Font size="61.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+                  <Button fx:id="uusiViikko" alignment="CENTER" centerShape="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="122.0" prefWidth="434.0" text="Luo uusi viikko" textAlignment="CENTER">
+                     <font>
+                        <Font name="Century Gothic" size="33.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets right="5.0" />
+                     </opaqueInsets>
+                  </Button>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="viikkonakyma" dividerPositions="0.12942989214175654, 0.2280431432973806, 0.3266563944530046, 0.4252696456086287, 0.5462249614791987, 0.8574730354391371" layoutX="-1.0" layoutY="117.0" prefHeight="931.0" prefWidth="1754.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="117.0">
+              <items>
+                <AnchorPane id="maanantai" fx:id="ma" minHeight="0.0" minWidth="229.0" prefHeight="771.0" prefWidth="229.0" stylesheets="@varit.css">
+                     <children>
+                        <Button fx:id="maButton" layoutX="13.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="205.0" text="Maanantai">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="15.0" layoutY="72.0" onMouseClicked="#listMaanantaiLisaa" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="img12" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img13" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img14" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img15" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img11" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="tiistai" fx:id="ti" minHeight="0.0" minWidth="250.0" onMouseClicked="#listTiistaiLisaa" stylesheets="@varit.css">
+                     <children>
+                        <Button fx:id="tiButton" layoutX="28.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="205.0" text="Tiistai">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="25.0" layoutY="79.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="img21" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img22" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img23" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img24" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img25" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="keskiviikko" fx:id="ke" minHeight="0.0" minWidth="250.0" onMouseClicked="#listKeskiviikkoLisaa" stylesheets="@varit.css">
+                     <children>
+                        <Button fx:id="keButton" layoutX="26.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="205.0" text="Keskiviikko">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="25.0" layoutY="72.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="img31" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img32" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img33" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img34" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img35" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="torstai" fx:id="to" minHeight="0.0" minWidth="244.0" onMouseClicked="#listTorstaiLisaa" prefHeight="875.0" prefWidth="244.0" stylesheets="@varit.css">
+                     <children>
+                        <Button fx:id="toButton" layoutX="22.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="205.0" text="Torstai">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="25.0" layoutY="68.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="img41" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img42" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img43" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img44" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img45" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="perjantai" fx:id="pe" minHeight="0.0" minWidth="245.0" onMouseClicked="#listPerjantaiLisaa" stylesheets="@varit.css" SplitPane.resizableWithParent="false">
+                     <children>
+                        <Button fx:id="peButton" layoutX="18.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="205.0" text="Perjantai">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="23.0" layoutY="64.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="img51" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img52" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img53" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img54" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img55" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="lauantai" fx:id="la" minHeight="0.0" minWidth="250.0" onMouseClicked="#listLauantaiLisaa" stylesheets="@varit.css">
+                     <children>
+                        <Button fx:id="laButton" layoutX="26.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="205.0" text="Lauantai">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="29.0" layoutY="69.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="img61" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img62" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img63" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img64" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img65" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="sunnuntai" fx:id="su" minHeight="0.0" minWidth="250.0" onMouseClicked="#listSunnuntaiLisaa" prefHeight="810.0" prefWidth="306.0" stylesheets="@varit.css">
+                     <children>
+                        <Button fx:id="suButton" layoutX="27.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="205.0" text="Sunnuntai">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="30.0" layoutY="71.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="img71" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img72" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img73" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img74" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                              <ImageView fx:id="img75" fitHeight="150.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMousePressed="#onMousePressed" pickOnBounds="true" preserveRatio="true">
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect></ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+               <effect>
+                  <Glow />
+               </effect>
+            </SplitPane>
+            <Button fx:id="lisaaKuvia" layoutY="4.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="112.0" prefWidth="229.0" text="Lisää kuvia">
+               <font>
+                  <Font name="Century Gothic" size="33.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ScrollBar fx:id="scrollbar" orientation="VERTICAL" prefHeight="1285.0" prefWidth="38.0" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" GridPane.vgrow="ALWAYS">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ScrollBar>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="38.0" minWidth="10.0" prefWidth="38.0" />
+      <ColumnConstraints maxWidth="12.333251953125" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="12.333251953125" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="12.333251953125" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints percentHeight="0.0" />
+      <RowConstraints maxHeight="954.0" minHeight="0.0" prefHeight="388.0" />
+   </rowConstraints>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</GridPane>

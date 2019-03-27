@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.1.2019, 14:47:10
+    Author     : verab,
+
+Väriluokka.
+Ensimmäisenä määritelty värit eri viikonpäiville.
+Allekkain määritelty jokaisen päivän AnchorPanen taustaväri.
+*/
+*{
+maanantai-color: #00b300;
+tiistai-color: #0288d1;
+keskiviikko-color: #ff8000;
+torstai-color: #9b2700;
+perjantai-color: #ffff00;
+lauantai-color: #ff9999;
+sunnuntai-color: #ff0000;
+
+}
+
+#maanantai{
+    -fx-background-color: green;
+}
+
+#tiistai{   
+    -fx-background-color: tiistai-color;
+}
+
+#keskiviikko{
+    -fx-background-color: keskiviikko-color;
+}
+
+#torstai{
+    -fx-background-color: torstai-color;
+}
+
+#perjantai{
+    -fx-background-color: perjantai-color;
+}
+
+#lauantai{
+    -fx-background-color: lauantai-color;
+}
+
+#sunnuntai{
+    -fx-background-color: sunnuntai-color;
+}
