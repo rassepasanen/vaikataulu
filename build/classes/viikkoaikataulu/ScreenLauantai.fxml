@@ -9,7 +9,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1082.0" prefWidth="1809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
+<AnchorPane fx:id="lanakyma" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1082.0" prefWidth="1809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
    <children>
       <HBox layoutX="-11.0" layoutY="120.0" prefHeight="907.0" prefWidth="1831.0" AnchorPane.topAnchor="120.0">
          <children>
@@ -280,7 +280,7 @@
                   <Insets left="5.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="otaKuva" alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="112.0" prefWidth="301.0" text="Tallenna kuva" textAlignment="CENTER">
+            <Button fx:id="otaKuva" alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" onMousePressed="#saveAsPngLa" prefHeight="112.0" prefWidth="301.0" text="Tallenna kuva" textAlignment="CENTER">
                <font>
                   <Font name="Century Gothic" size="35.0" />
                </font>

@@ -412,7 +412,7 @@
                   <Glow />
                </effect>
             </SplitPane>
-            <Button fx:id="otaKuva" layoutY="4.0" mnemonicParsing="false" onAction="#handleButtonAction" onMousePressed="#saveAsPng" prefHeight="112.0" prefWidth="229.0" text="Ota kuva">
+            <Button fx:id="otaKuva" layoutY="4.0" mnemonicParsing="false" onAction="#handleButtonAction" onMousePressed="#saveAsPng" prefHeight="112.0" prefWidth="375.0" text="Tallenna kuva">
                <font>
                   <Font name="Century Gothic" size="33.0" />
                </font>
