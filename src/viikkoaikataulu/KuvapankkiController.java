@@ -12,19 +12,23 @@ import javafx.fxml.Initializable;
 /**
  * FXML Controller class
  *
- * @author rasmuspasanen
+ * @author Rasmus Pasanen, Vera Bärlund, Jani Heiskanen
  */
 public class KuvapankkiController implements Initializable, ControlledScreen {
 
     ScreensController myController;
     /**
-     * Initializes the controller class.
+     *Alustaa kontrolliluokan.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }
     
+    /**
+     * Metodi, joka asettaa kontrollerin.
+     * @param screenParent 
+     */
     public void setScreenParent(ScreensController screenParent){
         myController = screenParent;
     }

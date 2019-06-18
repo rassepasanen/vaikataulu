@@ -7,6 +7,8 @@ package viikkoaikataulu;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.file.Files;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -50,7 +52,7 @@ public class Viikkoaikataulu extends Application {
         alkuIkkuna.setScene(scene);
         alkuIkkuna.show();
         //turvallinen sulkeminen suoritetaan tässä
-        alkuIkkuna.setOnCloseRequest(e -> closeProgram());
+        //alkuIkkuna.setOnCloseRequest(e -> closeProgram());
         
         //scene luonti
         scene1 = new Scene(fp1,250,100);
@@ -75,21 +77,35 @@ public class Viikkoaikataulu extends Application {
         Application.launch(args);
     }
 
-    private void closeProgram() {
+    //private void closeProgram() {
         //ruksista suljettaessa ajetaan tämä ja tallennetaan
-        saveProgram();
+        //saveProgram();
         
         
         
         
     }
-    private void saveProgram(){
+    //private void saveProgram(){
         /*
         tallennustiedosto "tiedosto1" tiedostona joka on aluksi käytössä oleva
         tallennustiedostona myös "tiedosto2" tiedosto joka sisältää oletusnäkymän tiedot
         tiedosto1 = tiedosto2 (kopioi tyhjän) kun painetaan uusi viikko
         kun ohjelmasta poistutaan tai siihen tehdään muutos, tallennetaan muutos "tiedosto1":seen
         */
+        /*File temp;
+        try {
+            temp = File.createTempFile("temp1",".txt");
+            boolean exists = temp.exists();
+            System.out.println("Temp file exists : " + exists);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+            
+        }
+        */
+        
+        
         //FileChooser fc = new FileChooser();
         //File selectedFile = fc.showOpenDialog(null);
         
@@ -97,8 +113,8 @@ public class Viikkoaikataulu extends Application {
         //    listView.getItems().add(selectedFile.getAbsoluteFile());//metodin vaihtaminen
         //}else{
             
-        }
-    }
+       
+    
     
     
 

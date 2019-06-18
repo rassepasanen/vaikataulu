@@ -9,7 +9,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1114.0" prefWidth="1809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1101.0" prefWidth="1809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
    <children>
       <GridPane prefHeight="392.0" prefWidth="596.0">
         <columnConstraints>
@@ -34,7 +34,7 @@
                         <Font name="Century Gothic Bold" size="40.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="ti1" fitHeight="180.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti1" fitHeight="100.0" fitWidth="160.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -42,7 +42,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti2" fitHeight="180.0" fitWidth="200.0" layoutX="190.0" layoutY="91.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti2" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="91.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -50,7 +50,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti3" fitHeight="180.0" fitWidth="200.0" layoutX="190.0" layoutY="271.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti3" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="271.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -58,7 +58,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti4" fitHeight="180.0" fitWidth="200.0" layoutX="190.0" layoutY="451.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti4" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="451.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -66,13 +66,45 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti5" fitHeight="180.0" fitWidth="200.0" layoutX="190.0" layoutY="601.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti5" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="601.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
                      <effect>
                         <InnerShadow />
                      </effect>
+                  </ImageView>
+                  <ImageView fx:id="ti6" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="491.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti7" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="591.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti8" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="691.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti9" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="791.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
                   </ImageView>
                </children>
             </VBox>
@@ -86,7 +118,7 @@
                         <Font name="Century Gothic Bold" size="40.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="ti6" fitHeight="180.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti10" fitHeight="100.0" fitWidth="160.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -94,7 +126,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti7" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="93.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti11" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="93.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -102,7 +134,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti8" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="273.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti12" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="273.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -110,7 +142,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti9" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="453.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti13" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="453.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -118,13 +150,45 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti10" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="633.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti14" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="633.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
                      <effect>
                         <InnerShadow />
                      </effect>
+                  </ImageView>
+                  <ImageView fx:id="ti15" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="493.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti16" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="593.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti17" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="693.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti18" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="793.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
                   </ImageView>
                </children>
             </VBox>
@@ -138,7 +202,7 @@
                         <Font name="Century Gothic Bold" size="40.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="ti11" fitHeight="180.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti19" fitHeight="100.0" fitWidth="160.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -146,7 +210,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti12" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="87.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti20" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="87.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -154,7 +218,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti13" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="267.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti21" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="267.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -162,7 +226,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti14" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="447.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti22" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="447.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -170,13 +234,45 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="ti15" fitHeight="180.0" fitWidth="200.0" layoutX="230.0" layoutY="627.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ti23" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="627.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
                      <effect>
                         <InnerShadow />
                      </effect>
+                  </ImageView>
+                  <ImageView fx:id="ti24" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="487.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti25" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="587.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti26" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="687.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="ti27" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="787.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#TiistaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
                   </ImageView>
                </children>
             </VBox>
@@ -195,7 +291,7 @@
                   <Insets left="5.0" />
                </HBox.margin>
             </Button>
-            <Button id="takaisin" fx:id="lisaaKuvia" alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="112.0" prefWidth="250.0" text="Lisää kuvia" textAlignment="CENTER">
+            <Button id="takaisin" fx:id="otaKuva" alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="112.0" prefWidth="289.0" text="Tallenna kuva" textAlignment="CENTER">
                <font>
                   <Font name="Century Gothic" size="35.0" />
                </font>
@@ -203,12 +299,12 @@
                   <Insets right="5.0" />
                </opaqueInsets>
             </Button>
-            <Label alignment="CENTER" prefHeight="105.0" prefWidth="631.0" text="Tiistai">
+            <Label alignment="CENTER" prefHeight="105.0" prefWidth="663.0" text="Tiistai">
                <font>
                   <Font name="Century Gothic" size="60.0" />
                </font>
             </Label>
-            <Button fx:id="uusiViikko" alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="112.0" prefWidth="344.0" text="Luo uusi viikko" textAlignment="CENTER">
+            <Button fx:id="uusiViikko" alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#uusiTiistai" prefHeight="112.0" prefWidth="552.0" text="Luo uusi päivä" textAlignment="CENTER">
                <font>
                   <Font name="Century Gothic" size="35.0" />
                </font>
@@ -218,14 +314,6 @@
                <HBox.margin>
                   <Insets right="5.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="1223.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="278.0" text="Takaisin" textAlignment="CENTER">
-               <font>
-                  <Font name="Century Gothic" size="35.0" />
-               </font>
-               <opaqueInsets>
-                  <Insets right="5.0" />
-               </opaqueInsets>
             </Button>
          </children>
       </HBox>

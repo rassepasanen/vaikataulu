@@ -14,22 +14,43 @@ import javafx.scene.layout.StackPane;
 
 /**
  *
- * @author rasmuspasanen
+ * @author Rasmus Pasanen, Vera Bärlund, Jani Heiskanen
  */
 class ScreensController extends StackPane{
     
     private HashMap<String, Node> screens =new HashMap<>();
     
+    /**
+     * Näyttöjen kontrolloija.
+     */
     public ScreensController(){
         super();
     }
     
+    /**
+     * Metodi, joka lisää näytön.
+     * @param name Näytön nimi
+     * @param screen Näyttö
+     */
     public void addScreen(String name, Node screen){
         screens.put(name, screen);
     }
+    
+    /**
+     * Metodi, joka hakee näytön.
+     * @param name Näytön nimi
+     * @return 
+     */
     public Node getScreen(String name){
         return screens.get(name);
     }
+    
+    /**
+     * Metodi, joka lataa näytön.
+     * @param name Näytön nimi
+     * @param resources
+     * @return 
+     */
     public boolean loadScreen(String name, String resources){
         try {
             FXMLLoader myLoader = new FXMLLoader(getClass().getResource(resources));
@@ -43,6 +64,12 @@ class ScreensController extends StackPane{
             return false;
         }
     }
+    
+    /**
+     * Metodi, joka asettaa näytön.
+     * @param name Näytön nimi
+     * @return Totuusarvo
+     */
     public boolean setScreen(final String name) {       
         if (screens.get(name) != null) {   //screen loaded
             final DoubleProperty opacity = opacityProperty();
@@ -54,8 +81,13 @@ class ScreensController extends StackPane{
         }
     }
 
-    //This method will remove the screen with the given name from the collection of screens
+    /**
+     * Metodi, joka poistaa näytön näyttöjen kokoelmasta.
+     * @param name Näytön nimi
+     * @return Totuusarvo
+     */
     public boolean unloadScreen(String name) {
+        //This method will remove the screen with the given name from the collection of screens
         if (screens.remove(name) == null) {
             System.out.println("Screen didn't exist");
             return false;

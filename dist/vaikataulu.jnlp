@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="vaikataulu.jar" size="4418929" download="eager" />
+    <jar href="vaikataulu.jar" size="4431525" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="vaikataulu" >
     <param name="requiredFXVersion" value="8.0+"/>

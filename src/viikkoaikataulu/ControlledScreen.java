@@ -7,10 +7,14 @@ package viikkoaikataulu;
 
 /**
  *
- * @author rasmuspasanen
+ * @author Rasmus Pasanen, Vera Bärlund, Jani Heiskanen
  */
 public interface ControlledScreen {
     
+    /**
+     * Metodi näytön hallitsemiseen.
+     * @param screenPage 
+     */
     public void setScreenParent(ScreensController screenPage);
     
 }

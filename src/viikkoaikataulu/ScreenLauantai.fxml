@@ -9,32 +9,21 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1038.0" prefWidth="1809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
+<AnchorPane fx:id="lanakyma" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1082.0" prefWidth="1809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viikkoaikataulu.FXMLDocumentController">
    <children>
-      <GridPane prefHeight="392.0" prefWidth="596.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-      </GridPane>
       <HBox layoutX="-11.0" layoutY="120.0" prefHeight="907.0" prefWidth="1831.0" AnchorPane.topAnchor="120.0">
          <children>
-            <VBox onMouseClicked="#listLaAamuLisaa" prefHeight="769.0" prefWidth="601.0" style="-fx-background-color: #ff9999;">
+            <VBox onMouseClicked="#listLaAamuLisaa" prefHeight="947.0" prefWidth="531.0" style="-fx-background-color: #ff9999;">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
                <children>
-                  <Label alignment="CENTER" prefHeight="81.0" prefWidth="537.0" text="Aamu">
+                  <Label alignment="CENTER" prefHeight="74.0" prefWidth="531.0" text="Aamu">
                      <font>
                         <Font name="Century Gothic Bold" size="40.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="la1" fitHeight="166.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la1" fitHeight="100.0" fitWidth="160.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -42,7 +31,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la2" fitHeight="166.0" fitWidth="200.0" layoutX="190.0" layoutY="91.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la2" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="91.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -50,7 +39,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la3" fitHeight="166.0" fitWidth="200.0" layoutX="190.0" layoutY="257.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la3" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="257.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -58,7 +47,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la4" fitHeight="166.0" fitWidth="200.0" layoutX="190.0" layoutY="423.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la4" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="423.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
@@ -66,13 +55,45 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la5" fitHeight="166.0" fitWidth="200.0" layoutX="190.0" layoutY="589.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la5" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="589.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="180.0" />
                      </VBox.margin>
                      <effect>
                         <InnerShadow />
                      </effect>
+                  </ImageView>
+                  <ImageView fx:id="la6" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="531.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la7" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="641.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la8" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="751.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la9" fitHeight="100.0" fitWidth="160.0" layoutX="190.0" layoutY="773.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="180.0" />
+                     </VBox.margin>
                   </ImageView>
                </children>
             </VBox>
@@ -86,7 +107,7 @@
                         <Font name="Century Gothic Bold" size="40.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="la6" fitHeight="166.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la10" fitHeight="100.0" fitWidth="160.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -94,7 +115,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la7" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="93.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la11" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="93.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -102,7 +123,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la8" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="259.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la12" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="259.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -110,7 +131,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la9" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="425.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la13" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="425.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -118,13 +139,45 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la10" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="591.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la14" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="591.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
                      <effect>
                         <InnerShadow />
                      </effect>
+                  </ImageView>
+                  <ImageView fx:id="la15" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="493.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la16" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="593.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la17" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="693.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la18" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="793.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
                   </ImageView>
                </children>
             </VBox>
@@ -138,7 +191,7 @@
                         <Font name="Century Gothic Bold" size="40.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="la11" fitHeight="166.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la19" fitHeight="100.0" fitWidth="160.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -146,7 +199,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la12" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="87.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la20" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="87.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -154,7 +207,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la13" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="253.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la21" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="253.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -162,7 +215,7 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la14" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="419.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la22" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="419.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
@@ -170,13 +223,45 @@
                         <InnerShadow />
                      </effect>
                   </ImageView>
-                  <ImageView fx:id="la15" fitHeight="166.0" fitWidth="200.0" layoutX="230.0" layoutY="585.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="la23" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="585.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets left="220.0" />
                      </VBox.margin>
                      <effect>
                         <InnerShadow />
                      </effect>
+                  </ImageView>
+                  <ImageView fx:id="la24" fitHeight="100.0" fitWidth="160.0" layoutX="230.0" layoutY="487.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la25" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="587.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la26" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="687.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="la27" fitHeight="100.0" fitWidth="160.0" layoutX="10.0" layoutY="787.0" onDragDropped="#handleDrop" onDragOver="#handleOver" onMouseDragExited="#handleDrop" onMousePressed="#LauantaiPoisto" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="220.0" />
+                     </VBox.margin>
                   </ImageView>
                </children>
             </VBox>
@@ -195,7 +280,7 @@
                   <Insets left="5.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="lisaaKuvia" alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="112.0" prefWidth="301.0" text="Lisää kuvia" textAlignment="CENTER">
+            <Button fx:id="otaKuva" alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" onMousePressed="#saveAsPngLa" prefHeight="112.0" prefWidth="301.0" text="Tallenna kuva" textAlignment="CENTER">
                <font>
                   <Font name="Century Gothic" size="35.0" />
                </font>
@@ -208,7 +293,7 @@
                   <Font name="Century Gothic" size="60.0" />
                </font>
             </Label>
-            <Button fx:id="uusiViikko" alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="112.0" prefWidth="322.0" text="Luo uusi viikko" textAlignment="CENTER">
+            <Button fx:id="uusiViikko" alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#uusiLauantai" prefHeight="112.0" prefWidth="709.0" text="Luo uusi päivä" textAlignment="CENTER">
                <font>
                   <Font name="Century Gothic" size="35.0" />
                </font>
@@ -218,14 +303,6 @@
                <HBox.margin>
                   <Insets right="5.0" />
                </HBox.margin>
-            </Button>
-            <Button fx:id="takaisin1" alignment="CENTER" centerShape="false" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" mnemonicParsing="false" prefHeight="112.0" prefWidth="387.0" text="Tallenna" textAlignment="CENTER">
-               <font>
-                  <Font name="Century Gothic" size="35.0" />
-               </font>
-               <opaqueInsets>
-                  <Insets right="5.0" />
-               </opaqueInsets>
             </Button>
          </children>
       </HBox>
